@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+}
+
+header {
+    padding: 24px 16px;
+    position: fixed;
+    /*top: 0;
+    left: 0;
+    right: 0;*/
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    top: 0;
+}
+
+header + * {
+    margin-top: 85px;
+}
+
+section {
+    padding: 96px 0;
+}
+
+footer {
+    padding: 80px 0 0;
+}
+
+.bg-primary {
+    background-color: #18bc9c;
+    /*margin: 85px 0 0;*/
+}
+
+.bg-secondary {
+    background-color: #2c3e50;
+}
+
+.logo, nav {
+    display: inline-block;
+}
+
+.logo > a {
+    font-size: 32px;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav {
+    float: right;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-nav {
+    padding: 10px 0 8px;
+    margin: 0;
+    list-style: none;
+}
+
+.main-nav > li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.main-nav .nav-link:hover, .main-nav .nav-link:focus {
+    color: #18bc9c;
+}
+
+к каждому проекту подключать нормалайз, дз - закончить, но без формы
