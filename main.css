@@ -13,6 +13,7 @@ header {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     top: 0;
+    z-index: 10;
 }
 
 header + * {
@@ -77,4 +78,60 @@ header::after {
     color: #18bc9c;
 }
 
-к каждому проекту подключать нормалайз, дз - закончить, но без формы
+.portfolio-item {
+    display: inline-block;
+    position: relative;
+    width: 33%;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+.container {
+    text-align: center;
+    font-size: 0; убирает пробел между инлайн блоками
+}
+
+.pi-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #18bc9c;
+    opacity: 0;
+}
+
+.portfolio-item:hover .pi-overlay, .portfolio-item:focus .pi-overlay {
+    opacity: .65;
+}
+
+.pi-overlay > .fa {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    color: green;
+    margin: auto;
+}
+
+.greeting {
+    position: relative;
+    width: 15%;
+    margin: 0;
+    padding: 0;
+    background-color: #18bc9c;
+}
+
+p {
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+
+к каждому проекту подключать нормалайз, дз - закончить, но без формы, абсолютное позиционирование
